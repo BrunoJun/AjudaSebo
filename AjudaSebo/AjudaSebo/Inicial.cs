@@ -16,5 +16,10 @@ namespace AjudaSebo
         {
             InitializeComponent();
         }
+
+        private void Inicial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

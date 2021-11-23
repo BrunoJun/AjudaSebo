@@ -12,3 +12,16 @@ C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.cspr
 C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.csproj.CoreCompileInputs.cache
 C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.exe
 C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.pdb
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe.config
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.pdb
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.csproj.AssemblyReference.cache
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Alterar.resources
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Cadastrar.resources
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Consultar.resources
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Inicial.resources
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Properties.Resources.resources
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.csproj.GenerateResource.cache
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.csproj.CoreCompileInputs.cache
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.exe
+C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.pdb

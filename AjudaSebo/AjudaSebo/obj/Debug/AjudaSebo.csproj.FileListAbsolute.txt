@@ -1,0 +1,14 @@
+C:\Users\ataid\Documents\FATEC\4º Semestre\Linguagem de programação VIII\Projeto AjudaSEBO\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe.config
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe.config
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.pdb
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.csproj.AssemblyReference.cache
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Alterar.resources
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Cadastrar.resources
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Consultar.resources
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Inicial.resources
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Properties.Resources.resources
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.csproj.GenerateResource.cache
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.csproj.CoreCompileInputs.cache
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.exe
+C:\Users\BrunoJun\Desktop\projetoC#\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.pdb

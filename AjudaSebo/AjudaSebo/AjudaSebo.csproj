@@ -64,6 +64,7 @@
     <Compile Include="Consultar.Designer.cs">
       <DependentUpon>Consultar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Infra\DAO.cs" />
     <Compile Include="Inicial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +114,7 @@
   <ItemGroup>
     <None Include="Resources\Logo AjudaSEBO1.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -40,7 +40,7 @@
             this.lbnCon1 = new System.Windows.Forms.Label();
             this.textAutor = new System.Windows.Forms.TextBox();
             this.textGenero = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bttAlterar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -172,18 +172,19 @@
             this.textGenero.TabIndex = 25;
             this.textGenero.Visible = false;
             // 
-            // button1
+            // bttAlterar
             // 
-            this.button1.BackColor = System.Drawing.Color.YellowGreen;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(270, 304);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 41);
-            this.button1.TabIndex = 26;
-            this.button1.Text = "Alterar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.bttAlterar.BackColor = System.Drawing.Color.YellowGreen;
+            this.bttAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bttAlterar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttAlterar.ForeColor = System.Drawing.Color.Black;
+            this.bttAlterar.Location = new System.Drawing.Point(270, 304);
+            this.bttAlterar.Name = "bttAlterar";
+            this.bttAlterar.Size = new System.Drawing.Size(125, 41);
+            this.bttAlterar.TabIndex = 26;
+            this.bttAlterar.Text = "Alterar";
+            this.bttAlterar.UseVisualStyleBackColor = false;
+            this.bttAlterar.Click += new System.EventHandler(this.button1_Click);
             // 
             // Consultar
             // 
@@ -191,7 +192,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GreenYellow;
             this.ClientSize = new System.Drawing.Size(636, 357);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bttAlterar);
             this.Controls.Add(this.textGenero);
             this.Controls.Add(this.textAutor);
             this.Controls.Add(this.btnVoltar);
@@ -225,6 +226,6 @@
         private System.Windows.Forms.Label lbnCon1;
         private System.Windows.Forms.TextBox textAutor;
         private System.Windows.Forms.TextBox textGenero;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bttAlterar;
     }
 }

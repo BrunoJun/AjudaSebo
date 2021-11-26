@@ -8,6 +8,7 @@ namespace AjudaSebo
 {
     static class Program
     {
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +17,7 @@ namespace AjudaSebo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Inicial());
+            Application.Run(new Cadastrar());
         }
     }
 }

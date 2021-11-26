@@ -36,14 +36,14 @@
             this.lbnCad4 = new System.Windows.Forms.Label();
             this.lbnCad5 = new System.Windows.Forms.Label();
             this.lbnCad6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textTitulo = new System.Windows.Forms.TextBox();
+            this.textGenero = new System.Windows.Forms.TextBox();
+            this.textEditora = new System.Windows.Forms.TextBox();
+            this.textAutor = new System.Windows.Forms.TextBox();
+            this.textISBN = new System.Windows.Forms.TextBox();
+            this.textEdicao = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textPreco = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCadTela
@@ -58,6 +58,7 @@
             this.btnCadTela.TabIndex = 10;
             this.btnCadTela.Text = "Cadastrar";
             this.btnCadTela.UseVisualStyleBackColor = false;
+            this.btnCadTela.Click += new System.EventHandler(this.btnCadTela_Click);
             // 
             // btnVoltarTela
             // 
@@ -137,53 +138,53 @@
             this.lbnCad6.TabIndex = 12;
             this.lbnCad6.Text = "Preço (R$):";
             // 
-            // textBox1
+            // textTitulo
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 31);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(321, 25);
-            this.textBox1.TabIndex = 18;
+            this.textTitulo.Location = new System.Drawing.Point(190, 31);
+            this.textTitulo.Multiline = true;
+            this.textTitulo.Name = "textTitulo";
+            this.textTitulo.Size = new System.Drawing.Size(321, 25);
+            this.textTitulo.TabIndex = 18;
             // 
-            // textBox2
+            // textGenero
             // 
-            this.textBox2.Location = new System.Drawing.Point(190, 87);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(321, 25);
-            this.textBox2.TabIndex = 19;
+            this.textGenero.Location = new System.Drawing.Point(190, 87);
+            this.textGenero.Multiline = true;
+            this.textGenero.Name = "textGenero";
+            this.textGenero.Size = new System.Drawing.Size(321, 25);
+            this.textGenero.TabIndex = 19;
             // 
-            // textBox3
+            // textEditora
             // 
-            this.textBox3.Location = new System.Drawing.Point(190, 140);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(321, 25);
-            this.textBox3.TabIndex = 20;
+            this.textEditora.Location = new System.Drawing.Point(190, 140);
+            this.textEditora.Multiline = true;
+            this.textEditora.Name = "textEditora";
+            this.textEditora.Size = new System.Drawing.Size(321, 25);
+            this.textEditora.TabIndex = 20;
             // 
-            // textBox4
+            // textAutor
             // 
-            this.textBox4.Location = new System.Drawing.Point(190, 195);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(321, 25);
-            this.textBox4.TabIndex = 21;
+            this.textAutor.Location = new System.Drawing.Point(190, 195);
+            this.textAutor.Multiline = true;
+            this.textAutor.Name = "textAutor";
+            this.textAutor.Size = new System.Drawing.Size(321, 25);
+            this.textAutor.TabIndex = 21;
             // 
-            // textBox5
+            // textISBN
             // 
-            this.textBox5.Location = new System.Drawing.Point(190, 251);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(321, 25);
-            this.textBox5.TabIndex = 22;
+            this.textISBN.Location = new System.Drawing.Point(190, 251);
+            this.textISBN.Multiline = true;
+            this.textISBN.Name = "textISBN";
+            this.textISBN.Size = new System.Drawing.Size(321, 25);
+            this.textISBN.TabIndex = 22;
             // 
-            // textBox6
+            // textEdicao
             // 
-            this.textBox6.Location = new System.Drawing.Point(190, 304);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(321, 25);
-            this.textBox6.TabIndex = 23;
+            this.textEdicao.Location = new System.Drawing.Point(190, 304);
+            this.textEdicao.Multiline = true;
+            this.textEdicao.Name = "textEdicao";
+            this.textEdicao.Size = new System.Drawing.Size(321, 25);
+            this.textEdicao.TabIndex = 23;
             // 
             // label1
             // 
@@ -195,13 +196,13 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Edição";
             // 
-            // textBox7
+            // textPreco
             // 
-            this.textBox7.Location = new System.Drawing.Point(220, 361);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(291, 25);
-            this.textBox7.TabIndex = 25;
+            this.textPreco.Location = new System.Drawing.Point(220, 361);
+            this.textPreco.Multiline = true;
+            this.textPreco.Name = "textPreco";
+            this.textPreco.Size = new System.Drawing.Size(291, 25);
+            this.textPreco.TabIndex = 25;
             // 
             // Cadastrar
             // 
@@ -209,14 +210,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GreenYellow;
             this.ClientSize = new System.Drawing.Size(652, 485);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textPreco);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textEdicao);
+            this.Controls.Add(this.textISBN);
+            this.Controls.Add(this.textAutor);
+            this.Controls.Add(this.textEditora);
+            this.Controls.Add(this.textGenero);
+            this.Controls.Add(this.textTitulo);
             this.Controls.Add(this.lbnCad6);
             this.Controls.Add(this.btnVoltarTela);
             this.Controls.Add(this.btnCadTela);
@@ -243,13 +244,13 @@
         private System.Windows.Forms.Label lbnCad4;
         private System.Windows.Forms.Label lbnCad5;
         private System.Windows.Forms.Label lbnCad6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textTitulo;
+        private System.Windows.Forms.TextBox textGenero;
+        private System.Windows.Forms.TextBox textEditora;
+        private System.Windows.Forms.TextBox textAutor;
+        private System.Windows.Forms.TextBox textISBN;
+        private System.Windows.Forms.TextBox textEdicao;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textPreco;
     }
 }

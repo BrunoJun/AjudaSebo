@@ -64,7 +64,6 @@
     <Compile Include="Consultar.Designer.cs">
       <DependentUpon>Consultar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Infra\DAO.cs" />
     <Compile Include="Inicial.cs">
       <SubType>Form</SubType>
     </Compile>

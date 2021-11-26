@@ -32,7 +32,7 @@
             this.btnConTela = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textTitulo = new System.Windows.Forms.TextBox();
             this.lbnCon5 = new System.Windows.Forms.Label();
             this.lbnCon4 = new System.Windows.Forms.Label();
             this.lbnCon3 = new System.Windows.Forms.Label();
@@ -68,6 +68,7 @@
             this.btnConTela.TabIndex = 22;
             this.btnConTela.Text = "Consultar";
             this.btnConTela.UseVisualStyleBackColor = false;
+            this.btnConTela.Click += new System.EventHandler(this.btnConTela_Click);
             // 
             // textBox3
             // 
@@ -88,14 +89,14 @@
             this.textBox2.Visible = false;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox1
+            // textTitulo
             // 
-            this.textBox1.Location = new System.Drawing.Point(201, 13);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(321, 25);
-            this.textBox1.TabIndex = 17;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textTitulo.Location = new System.Drawing.Point(201, 13);
+            this.textTitulo.Multiline = true;
+            this.textTitulo.Name = "textTitulo";
+            this.textTitulo.Size = new System.Drawing.Size(321, 25);
+            this.textTitulo.TabIndex = 17;
+            this.textTitulo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbnCon5
             // 
@@ -195,7 +196,7 @@
             this.Controls.Add(this.btnConTela);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textTitulo);
             this.Controls.Add(this.lbnCon5);
             this.Controls.Add(this.lbnCon4);
             this.Controls.Add(this.lbnCon3);
@@ -214,7 +215,7 @@
         private System.Windows.Forms.Button btnConTela;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textTitulo;
         private System.Windows.Forms.Label lbnCon5;
         private System.Windows.Forms.Label lbnCon4;
         private System.Windows.Forms.Label lbnCon3;

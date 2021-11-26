@@ -55,6 +55,7 @@
             this.btnConVoltar.TabIndex = 23;
             this.btnConVoltar.Text = "Voltar";
             this.btnConVoltar.UseVisualStyleBackColor = false;
+            this.btnConVoltar.Click += new System.EventHandler(this.btnConVoltar_Click);
             // 
             // btnConTela
             // 
@@ -77,7 +78,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(321, 25);
             this.textBox3.TabIndex = 19;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox2
             // 
@@ -87,7 +87,6 @@
             this.textBox2.Size = new System.Drawing.Size(321, 25);
             this.textBox2.TabIndex = 18;
             this.textBox2.Visible = false;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textTitulo
             // 
@@ -96,63 +95,61 @@
             this.textTitulo.Name = "textTitulo";
             this.textTitulo.Size = new System.Drawing.Size(321, 25);
             this.textTitulo.TabIndex = 17;
-            this.textTitulo.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // lbnCon5
             // 
             this.lbnCon5.AutoSize = true;
-            this.lbnCon5.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnCon5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.lbnCon5.Location = new System.Drawing.Point(114, 67);
             this.lbnCon5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbnCon5.Name = "lbnCon5";
-            this.lbnCon5.Size = new System.Drawing.Size(58, 25);
+            this.lbnCon5.Size = new System.Drawing.Size(62, 22);
             this.lbnCon5.TabIndex = 16;
             this.lbnCon5.Text = "ISBN:";
             // 
             // lbnCon4
             // 
             this.lbnCon4.AutoSize = true;
-            this.lbnCon4.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnCon4.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.lbnCon4.Location = new System.Drawing.Point(112, 181);
             this.lbnCon4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbnCon4.Name = "lbnCon4";
-            this.lbnCon4.Size = new System.Drawing.Size(65, 25);
+            this.lbnCon4.Size = new System.Drawing.Size(68, 22);
             this.lbnCon4.TabIndex = 15;
             this.lbnCon4.Text = "Autor:";
             // 
             // lbnCon3
             // 
             this.lbnCon3.AutoSize = true;
-            this.lbnCon3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnCon3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.lbnCon3.Location = new System.Drawing.Point(93, 124);
             this.lbnCon3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbnCon3.Name = "lbnCon3";
-            this.lbnCon3.Size = new System.Drawing.Size(79, 25);
+            this.lbnCon3.Size = new System.Drawing.Size(84, 22);
             this.lbnCon3.TabIndex = 14;
             this.lbnCon3.Text = "Editora:";
             // 
             // lbnCon2
             // 
             this.lbnCon2.AutoSize = true;
-            this.lbnCon2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnCon2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.lbnCon2.Location = new System.Drawing.Point(92, 241);
             this.lbnCon2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbnCon2.Name = "lbnCon2";
-            this.lbnCon2.Size = new System.Drawing.Size(80, 25);
+            this.lbnCon2.Size = new System.Drawing.Size(86, 22);
             this.lbnCon2.TabIndex = 13;
             this.lbnCon2.Text = "Gênero:";
             // 
             // lbnCon1
             // 
             this.lbnCon1.AutoSize = true;
-            this.lbnCon1.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnCon1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold);
             this.lbnCon1.Location = new System.Drawing.Point(105, 13);
             this.lbnCon1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lbnCon1.Name = "lbnCon1";
-            this.lbnCon1.Size = new System.Drawing.Size(67, 25);
+            this.lbnCon1.Size = new System.Drawing.Size(70, 22);
             this.lbnCon1.TabIndex = 12;
             this.lbnCon1.Text = "Título:";
-            this.lbnCon1.Click += new System.EventHandler(this.lbnCon1_Click);
             // 
             // textBox4
             // 

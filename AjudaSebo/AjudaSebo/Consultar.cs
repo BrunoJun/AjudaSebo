@@ -72,13 +72,25 @@ namespace AjudaSebo
 
             List<string> listaISBNs = cadastro.verificarGeral("livros", "isbn");
             List<string> listaQuantidade = cadastro.verificarGeral("livros", "quantidade");
+            List<string> listaPreco= cadastro.verificarGeral("livros", "preco");
+
 
             int indiceISBN = listaISBNs.IndexOf(textISBN.Text);
             string quantidadeLivroAtual = listaQuantidade[indiceISBN];
 
             if (Convert.ToInt64(quantidadeLivroAtual) - 1 >= 0)
             {
+                DateTime hoje = DateTime.UtcNow.Date;
+                string hojeFormatado = hoje.ToString("yyyy-MM-dd");
 
+                cadastro.cadastrarGeral("vendas", hojeFormatado, listaPreco[indiceISBN].Replace(",", "."));
+
+                List<string> listaIdVendas = cadastro.verificarGeral("vendas", "data");
+
+                string idLivro = cadastro.verificarID("livros", "id_livro", "isbn", textISBN.Text);
+                string idVenda = cadastro.verificarID("vendas", "id_venda", "data", Convert.ToString(hoje));
+
+                cadastro.cadastrarGeral("livros_vendas", idLivro, idVenda);
                 diminuirQuantidade(textISBN.Text);
             }
         }

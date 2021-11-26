@@ -133,6 +133,8 @@ namespace AjudaSebo
 
         public void cadastrarGeral(string tabela, params string[] valores)
         {
+            int j = 1;
+
             List<string> colunas = listaColunas(tabela);
 
             string url = "Data Source=WINDOWSCOMPUTER\\SQLEXPRESS;Initial Catalog=ajudasebo;Integrated Security=True";
@@ -141,7 +143,9 @@ namespace AjudaSebo
 
             string sql = $"INSERT INTO {tabela} (";
 
-            for (int i = 1; i < colunas.Count; i++)
+            if (tabela.Equals("livros_vendas")) j = 0;
+
+            for (int i = j; i < colunas.Count; i++)
             {
 
                 sql += colunas[i];

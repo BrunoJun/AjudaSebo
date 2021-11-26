@@ -37,4 +37,3 @@ C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\De
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe.config
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.pdb
-C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.RegistrarVenda.resources

@@ -222,7 +222,7 @@ namespace AjudaSebo
             command.ExecuteNonQuery();
         }
 
-        private string verificarID(string tabela, string colunaID, string colunaElemento, string elemento)
+        public string verificarID(string tabela, string colunaID, string colunaElemento, string elemento)
         {
 
             List<string> valoresID = verificarGeral(tabela, colunaID);

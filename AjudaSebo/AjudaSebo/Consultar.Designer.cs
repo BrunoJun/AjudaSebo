@@ -41,6 +41,7 @@
             this.textAutor = new System.Windows.Forms.TextBox();
             this.textGenero = new System.Windows.Forms.TextBox();
             this.bttAlterar = new System.Windows.Forms.Button();
+            this.bttVender = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -49,7 +50,7 @@
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.Black;
-            this.btnVoltar.Location = new System.Drawing.Point(97, 304);
+            this.btnVoltar.Location = new System.Drawing.Point(12, 304);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(134, 41);
             this.btnVoltar.TabIndex = 23;
@@ -63,7 +64,7 @@
             this.btnConsultar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConsultar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsultar.ForeColor = System.Drawing.Color.Black;
-            this.btnConsultar.Location = new System.Drawing.Point(435, 304);
+            this.btnConsultar.Location = new System.Drawing.Point(339, 304);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(125, 41);
             this.btnConsultar.TabIndex = 22;
@@ -178,7 +179,7 @@
             this.bttAlterar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bttAlterar.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttAlterar.ForeColor = System.Drawing.Color.Black;
-            this.bttAlterar.Location = new System.Drawing.Point(270, 304);
+            this.bttAlterar.Location = new System.Drawing.Point(179, 304);
             this.bttAlterar.Name = "bttAlterar";
             this.bttAlterar.Size = new System.Drawing.Size(125, 41);
             this.bttAlterar.TabIndex = 26;
@@ -186,12 +187,27 @@
             this.bttAlterar.UseVisualStyleBackColor = false;
             this.bttAlterar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // bttVender
+            // 
+            this.bttVender.BackColor = System.Drawing.Color.YellowGreen;
+            this.bttVender.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bttVender.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttVender.ForeColor = System.Drawing.Color.Black;
+            this.bttVender.Location = new System.Drawing.Point(499, 304);
+            this.bttVender.Name = "bttVender";
+            this.bttVender.Size = new System.Drawing.Size(125, 41);
+            this.bttVender.TabIndex = 27;
+            this.bttVender.Text = "Vender";
+            this.bttVender.UseVisualStyleBackColor = false;
+            this.bttVender.Click += new System.EventHandler(this.bttVender_Click);
+            // 
             // Consultar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GreenYellow;
             this.ClientSize = new System.Drawing.Size(636, 357);
+            this.Controls.Add(this.bttVender);
             this.Controls.Add(this.bttAlterar);
             this.Controls.Add(this.textGenero);
             this.Controls.Add(this.textAutor);
@@ -227,5 +243,6 @@
         private System.Windows.Forms.TextBox textAutor;
         private System.Windows.Forms.TextBox textGenero;
         private System.Windows.Forms.Button bttAlterar;
+        private System.Windows.Forms.Button bttVender;
     }
 }

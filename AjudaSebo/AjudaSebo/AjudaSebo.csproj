@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Alterar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Alterar.Designer.cs">
-      <DependentUpon>Alterar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,9 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Alterar.resx">
-      <DependentUpon>Alterar.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="RegistrarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarVenda.Designer.cs">
+      <DependentUpon>RegistrarVenda.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cadastrar.resx">
       <DependentUpon>Cadastrar.cs</DependentUpon>
     </EmbeddedResource>
@@ -94,6 +91,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RegistrarVenda.resx">
+      <DependentUpon>RegistrarVenda.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

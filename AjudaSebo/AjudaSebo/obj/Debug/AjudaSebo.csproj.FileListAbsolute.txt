@@ -26,7 +26,6 @@ C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\
 C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.exe
 C:\Users\yanvr\Desktop\Projeto P8 - AjudaSebo\AjudaSebo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.pdb
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.csproj.AssemblyReference.cache
-C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Alterar.resources
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Cadastrar.resources
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Consultar.resources
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.Inicial.resources
@@ -38,3 +37,4 @@ C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\De
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe.config
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.exe
 C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\bin\Debug\AjudaSebo.pdb
+C:\Users\BrunoJun\Desktop\projetoC#\projetoDefinitivo\AjudaSebo\AjudaSebo\obj\Debug\AjudaSebo.RegistrarVenda.resources

@@ -67,6 +67,22 @@ namespace AjudaSebo
             alterarLivro(idLivro, idEditora, idAutor, idGeneroNovo);
         }
 
+        private void bttVender_Click(object sender, EventArgs e)
+        {
+
+            List<string> listaISBNs = cadastro.verificarGeral("livros", "isbn");
+            List<string> listaQuantidade = cadastro.verificarGeral("livros", "quantidade");
+
+            int indiceISBN = listaISBNs.IndexOf(textISBN.Text);
+            string quantidadeLivroAtual = listaQuantidade[indiceISBN];
+
+            if (Convert.ToInt64(quantidadeLivroAtual) - 1 >= 0)
+            {
+
+                diminuirQuantidade(textISBN.Text);
+            }
+        }
+
         private void btnConVoltar_Click(object sender, EventArgs e)
         {
 
@@ -146,6 +162,22 @@ namespace AjudaSebo
             }
 
             return resultados;
+        }
+
+        private void diminuirQuantidade(string isbn)
+        {
+
+            string url = "Data Source=WINDOWSCOMPUTER\\SQLEXPRESS;Initial Catalog=ajudasebo;Integrated Security=True";
+
+            SqlConnection sqlConnection = new SqlConnection(url);
+
+            string sql = $"update livros set quantidade = quantidade - 1 where isbn = {isbn}";
+
+            SqlCommand command = new SqlCommand(sql, sqlConnection);
+
+            sqlConnection.Open();
+
+            command.ExecuteNonQuery();
         }
     }
 }

@@ -20,30 +20,95 @@ namespace AjudaSebo
 
         private void btnCadTela_Click(object sender, EventArgs e)
         {
-            string[] listaLivros = verificarGeral("livros", "isbn");
-            string[] listaGeneros = verificarGeral("genero", "descricao");
-            string[] listaEditora = verificarGeral("editora", "nome");
-            string[] listaAutores = verificarGeral("autor", "nome");
 
-            if (listaLivros.Contains(textISBN.Text.ToLower()))
+            string idGenero = verificarID("genero", "id_genero", "descricao", textGenero.Text.ToLower());
+            string idEditora = verificarID("editora", "id_editora", "nome", textEditora.Text.ToLower());
+            string idAutor = verificarID("autor", "id_autor", "nome", textAutor.Text.ToLower());
+
+            List<string> listaLivros = verificarGeral("livros", "isbn");
+            List<string> listaGeneros = verificarGeral("genero", "descricao");
+            List<string> listaEditora = verificarGeral("editora", "nome");
+            List<string> listaAutores = verificarGeral("autor", "nome");
+            
+
+            bool contemLivro = listaLivros.Contains(textISBN.Text.ToLower());
+            bool contemGenero = listaGeneros.Contains(textGenero.Text.ToLower());
+            bool contemEditora = listaEditora.Contains(textEditora.Text.ToLower());
+            bool contemAutor = listaAutores.Contains(textAutor.Text.ToLower());
+
+            string titulo = textTitulo.Text;
+            string isbn = textISBN.Text;
+            string edicao = textEdicao.Text;
+            string preco = textPreco.Text;
+
+            if (contemLivro)
             {
 
                 aumentarQuantidade(textISBN.Text);
             }
-            else if (!listaGeneros.Contains(textGenero.Text.ToLower()) && listaEditora.Contains(textEditora.Text.ToLower()) && listaAutores.Contains(textAutor.Text.ToLower()))
+            else if (!contemGenero && contemEditora && contemAutor)
+            {
+                cadastrarGeral("genero", textGenero.Text);
+                listaGeneros = verificarGeral("genero", "descricao");
+                idGenero = verificarID("genero", "id_genero", "descricao", textGenero.Text.ToLower());
+                cadastrarGeral("livros", titulo, isbn, edicao, preco, "1", idGenero, idEditora, idAutor);
+            }
+            else if (!contemGenero && !contemEditora && contemAutor)
             {
 
                 cadastrarGeral("genero", textGenero.Text);
-                cadastrarGeral("livros");
-                // Terminar implementação
+                cadastrarGeral("editora", textEditora.Text);
+                listaGeneros = verificarGeral("genero", "descricao");
+                listaEditora = verificarGeral("editora", "nome");
+                idGenero = verificarID("genero", "id_genero", "descricao", textGenero.Text.ToLower());
+                idEditora = verificarID("editora", "id_editora", "nome", textEditora.Text.ToLower());
+                cadastrarGeral("livros", titulo, isbn, edicao, preco, "1", idGenero, idEditora, idAutor);
+            }
+            else if (!contemGenero && contemEditora && !contemAutor)
+            {
+
+                cadastrarGeral("genero", textGenero.Text);
+                cadastrarGeral("autor", textAutor.Text);
+                listaGeneros = verificarGeral("genero", "descricao");
+                listaAutores= verificarGeral("autor", "nome");
+                idGenero = verificarID("genero", "id_genero", "descricao", textGenero.Text.ToLower());
+                idAutor= verificarID("autor", "id_autor", "nome", textAutor.Text.ToLower());
+                cadastrarGeral("livros", titulo, isbn, edicao, preco, "1", idGenero, idEditora, idAutor);
+            }
+            else if (contemGenero && !contemEditora && !contemAutor)
+            {
+
+                cadastrarGeral("autor", textAutor.Text);
+                cadastrarGeral("editora", textEditora.Text);
+                listaAutores = verificarGeral("autor", "nome");
+                listaEditora = verificarGeral("editora", "nome");
+                idAutor = verificarID("autor", "id_autor", "nome", textAutor.Text.ToLower());
+                idEditora = verificarID("editora", "id_editora", "nome", textEditora.Text.ToLower());
+                cadastrarGeral("livros", titulo, isbn, edicao, preco, "1", idGenero, idEditora, idAutor);
+            }
+            else if (!contemGenero && !contemEditora && !contemAutor)
+            {
+
+                cadastrarGeral("autor", textAutor.Text);
+                cadastrarGeral("editora", textEditora.Text);
+                cadastrarGeral("genero", textGenero.Text);
+                idGenero = verificarID("genero", "id_genero", "descricao", textGenero.Text.ToLower());
+                idEditora = verificarID("editora", "id_editora", "nome", textEditora.Text.ToLower());
+                idAutor = verificarID("autor", "id_autor", "nome", textAutor.Text.ToLower());
+                cadastrarGeral("livros", titulo, isbn, edicao, preco, "1", idGenero, idEditora, idAutor);
             }
         }
 
-        public string[] verificarGeral(string tabela, string coluna)
+        private void btnVoltarTela_Click(object sender, EventArgs e)
+        {
+
+            this.Close();
+        }
+
+        public List<string> verificarGeral(string tabela, string coluna)
         {
 
             string url = "Data Source=WINDOWSCOMPUTER\\SQLEXPRESS;Initial Catalog=ajudasebo;Integrated Security=True";
-            int contador = 0;
 
             SqlConnection sqlConnection = new SqlConnection(url);
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
@@ -55,13 +120,12 @@ namespace AjudaSebo
             sqlConnection.Open();
             sqlDataAdapter.SelectCommand = command;
             sqlDataAdapter.Fill(dataSet);
-            string[] geral = new string[dataSet.Tables[0].Rows.Count];
+            List<string> geral = new List<string>();
 
             foreach (DataRow data in dataSet.Tables[0].Rows)
             {
 
-                geral[contador] = data.Field<String>(coluna).ToLower();
-                contador++;
+                geral.Add(Convert.ToString(data.Field<Object>(coluna)).ToLower());
             }
 
             return geral;
@@ -69,19 +133,20 @@ namespace AjudaSebo
 
         public void cadastrarGeral(string tabela, params string[] valores)
         {
-            string[] colunas = listaColunas(tabela);
+            List<string> colunas = listaColunas(tabela);
+
             string url = "Data Source=WINDOWSCOMPUTER\\SQLEXPRESS;Initial Catalog=ajudasebo;Integrated Security=True";
 
             SqlConnection sqlConnection = new SqlConnection(url);
 
             string sql = $"INSERT INTO {tabela} (";
 
-            for (int i = 1; i < colunas.Length; i++)
+            for (int i = 1; i < colunas.Count; i++)
             {
 
                 sql += colunas[i];
 
-                if (i < colunas.Length - 1)
+                if (i < colunas.Count - 1)
                 {
 
                     sql += ", ";
@@ -92,8 +157,9 @@ namespace AjudaSebo
 
             for(int i = 0; i < valores.Length; i++)
             {
-
+                sql += "'";
                 sql += valores[i];
+                sql += "'";
 
                 if (i < valores.Length - 1)
                 {
@@ -108,13 +174,12 @@ namespace AjudaSebo
             SqlCommand command = new SqlCommand(sql, sqlConnection);
 
             sqlConnection.Open();
-            //command.ExecuteNonQuery();
+            command.ExecuteNonQuery();
         }
 
-        private string[] listaColunas(string tabela)
+        private List<string> listaColunas(string tabela)
         {
 
-            int contador = 0;
             string url = "Data Source=WINDOWSCOMPUTER\\SQLEXPRESS;Initial Catalog=ajudasebo;Integrated Security=True";
 
             SqlConnection sqlConnection = new SqlConnection(url);
@@ -130,13 +195,12 @@ namespace AjudaSebo
             command.ExecuteNonQuery();
             sqlDataAdapter.SelectCommand = command;
             sqlDataAdapter.Fill(dataSet);
-            string[] geral = new string[dataSet.Tables[0].Rows.Count];
+            List<string> geral = new List<string>();
 
             foreach (DataRow data in dataSet.Tables[0].Rows)
             {
 
-                geral[contador] = data.Field<String>("COLUMN_NAME");
-                contador++;
+                geral.Add(data.Field<String>("COLUMN_NAME"));
             }
 
             return geral;
@@ -156,6 +220,23 @@ namespace AjudaSebo
             sqlConnection.Open();
 
             command.ExecuteNonQuery();
+        }
+
+        private string verificarID(string tabela, string colunaID, string colunaElemento, string elemento)
+        {
+
+            List<string> valoresID = verificarGeral(tabela, colunaID);
+            List<string> valoresElemento = verificarGeral(tabela, colunaElemento);
+
+            int indiceElemento = valoresElemento.IndexOf(elemento);
+
+            if (indiceElemento == -1)
+            {
+
+                return "0";
+            }
+
+            return valoresID[indiceElemento];
         }
     }
 }

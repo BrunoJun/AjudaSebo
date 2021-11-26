@@ -72,6 +72,7 @@
             this.btnVoltarTela.TabIndex = 11;
             this.btnVoltarTela.Text = "Voltar";
             this.btnVoltarTela.UseVisualStyleBackColor = false;
+            this.btnVoltarTela.Click += new System.EventHandler(this.btnVoltarTela_Click);
             // 
             // lbnCad1
             // 

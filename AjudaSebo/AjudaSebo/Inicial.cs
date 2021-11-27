@@ -17,9 +17,31 @@ namespace AjudaSebo
             InitializeComponent();
         }
 
-        private void Inicial_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
 
+            this.Close();
+        }
+
+        private void bttConsultarVendas_Click(object sender, EventArgs e)
+        {
+
+            ConsultarVendas consultarVendas = new ConsultarVendas();
+            consultarVendas.Show();
+        }
+
+        private void cadInicial_Click(object sender, EventArgs e)
+        {
+
+            Cadastrar cadastrar = new Cadastrar();
+            cadastrar.Show();
+        }
+
+        private void conInicial_Click(object sender, EventArgs e)
+        {
+
+            Consultar consultar = new Consultar();
+            consultar.Show();
         }
     }
 }

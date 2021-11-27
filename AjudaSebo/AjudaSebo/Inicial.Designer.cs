@@ -44,6 +44,7 @@
             this.cadInicial.TabIndex = 0;
             this.cadInicial.Text = "Cadastrar";
             this.cadInicial.UseVisualStyleBackColor = false;
+            this.cadInicial.Click += new System.EventHandler(this.cadInicial_Click);
             // 
             // conInicial
             // 
@@ -55,6 +56,7 @@
             this.conInicial.TabIndex = 1;
             this.conInicial.Text = "Consultar";
             this.conInicial.UseVisualStyleBackColor = false;
+            this.conInicial.Click += new System.EventHandler(this.conInicial_Click);
             // 
             // bttConsultarVendas
             // 
@@ -67,6 +69,7 @@
             this.bttConsultarVendas.TabIndex = 3;
             this.bttConsultarVendas.Text = "Consultar Venda";
             this.bttConsultarVendas.UseVisualStyleBackColor = false;
+            this.bttConsultarVendas.Click += new System.EventHandler(this.bttConsultarVendas_Click);
             // 
             // button1
             // 
@@ -79,6 +82,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Sair";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Inicial
             // 
@@ -97,7 +101,6 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Inicial";
             this.Text = "AjudaSebo";
-            this.Load += new System.EventHandler(this.Inicial_Load);
             this.ResumeLayout(false);
 
         }

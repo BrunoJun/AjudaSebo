@@ -17,7 +17,7 @@ namespace AjudaSebo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ConsultarVendas());
+            Application.Run(new Inicial());
         }
     }
 }

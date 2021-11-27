@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ajudaseboDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ajudaseboDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Cadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +62,12 @@
     </Compile>
     <Compile Include="Consultar.Designer.cs">
       <DependentUpon>Consultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVendas.Designer.cs">
+      <DependentUpon>ConsultarVendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Inicial.cs">
       <SubType>Form</SubType>
@@ -72,6 +83,9 @@
     <EmbeddedResource Include="Consultar.resx">
       <DependentUpon>Consultar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVendas.resx">
+      <DependentUpon>ConsultarVendas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicial.resx">
       <DependentUpon>Inicial.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +99,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ajudaseboDataSet.xsc">
+      <DependentUpon>ajudaseboDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ajudaseboDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ajudaseboDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ajudaseboDataSet.xss">
+      <DependentUpon>ajudaseboDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

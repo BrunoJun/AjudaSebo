@@ -30,7 +30,7 @@
         {
             this.cadInicial = new System.Windows.Forms.Button();
             this.conInicial = new System.Windows.Forms.Button();
-            this.RegInicial = new System.Windows.Forms.Button();
+            this.bttConsultarVendas = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -38,7 +38,7 @@
             // 
             this.cadInicial.BackColor = System.Drawing.Color.GreenYellow;
             this.cadInicial.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cadInicial.Location = new System.Drawing.Point(43, 179);
+            this.cadInicial.Location = new System.Drawing.Point(12, 179);
             this.cadInicial.Name = "cadInicial";
             this.cadInicial.Size = new System.Drawing.Size(123, 39);
             this.cadInicial.TabIndex = 0;
@@ -49,24 +49,24 @@
             // 
             this.conInicial.BackColor = System.Drawing.Color.GreenYellow;
             this.conInicial.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.conInicial.Location = new System.Drawing.Point(485, 179);
+            this.conInicial.Location = new System.Drawing.Point(520, 179);
             this.conInicial.Name = "conInicial";
             this.conInicial.Size = new System.Drawing.Size(123, 36);
             this.conInicial.TabIndex = 1;
             this.conInicial.Text = "Consultar";
             this.conInicial.UseVisualStyleBackColor = false;
             // 
-            // RegInicial
+            // bttConsultarVendas
             // 
-            this.RegInicial.BackColor = System.Drawing.Color.GreenYellow;
-            this.RegInicial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.RegInicial.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RegInicial.Location = new System.Drawing.Point(219, 23);
-            this.RegInicial.Name = "RegInicial";
-            this.RegInicial.Size = new System.Drawing.Size(186, 34);
-            this.RegInicial.TabIndex = 3;
-            this.RegInicial.Text = "Registrar Venda";
-            this.RegInicial.UseVisualStyleBackColor = false;
+            this.bttConsultarVendas.BackColor = System.Drawing.Color.GreenYellow;
+            this.bttConsultarVendas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bttConsultarVendas.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttConsultarVendas.Location = new System.Drawing.Point(217, 29);
+            this.bttConsultarVendas.Name = "bttConsultarVendas";
+            this.bttConsultarVendas.Size = new System.Drawing.Size(186, 34);
+            this.bttConsultarVendas.TabIndex = 3;
+            this.bttConsultarVendas.Text = "Consultar Venda";
+            this.bttConsultarVendas.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -89,7 +89,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(655, 368);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.RegInicial);
+            this.Controls.Add(this.bttConsultarVendas);
             this.Controls.Add(this.conInicial);
             this.Controls.Add(this.cadInicial);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -106,7 +106,7 @@
 
         private System.Windows.Forms.Button cadInicial;
         private System.Windows.Forms.Button conInicial;
-        private System.Windows.Forms.Button RegInicial;
+        private System.Windows.Forms.Button bttConsultarVendas;
         private System.Windows.Forms.Button button1;
     }
 }

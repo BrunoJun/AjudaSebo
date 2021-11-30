@@ -13,7 +13,7 @@ namespace AjudaSebo
 {
     public partial class Consultar : Form
     {
-        private Cadastrar cadastro = new Cadastrar();
+        private Cadastrar cadastro = new Cadastrar();       
 
         public Consultar()
         {
@@ -61,9 +61,9 @@ namespace AjudaSebo
         {
 
             string idLivro = cadastro.verificarID("livros", "id_livro", "isbn", textISBN.Text);
-            string idEditora = cadastro.verificarID("editora", "id_editora", "nome", textEditora.Text.ToLower());
-            string idAutor = cadastro.verificarID("autor", "id_autor", "nome", textAutor.Text.ToLower());
-            string idGeneroNovo = cadastro.verificarID("genero", "id_genero", "descricao", textGenero.Text.ToLower());
+            string idEditora = retornarValor(idLivro, "id_editora").ToLower();
+            string idAutor = retornarValor(idLivro, "id_autor").ToLower();
+            string idGeneroNovo = retornarValor(idLivro, "id_genero").ToLower();
             alterarLivro(idLivro, idEditora, idAutor, idGeneroNovo);
         }
 
@@ -121,7 +121,16 @@ namespace AjudaSebo
 
             string sql = $"UPDATE livros " +
                          $"SET titulo = '{textTitulo.Text}', isbn = '{textISBN.Text}', id_genero = {idGenero}, id_editora = {idEditora}, id_autor = {idAutor} " +
-                         $"WHERE id_livro = {id}";
+                         $"WHERE id_livro = {id};" +
+                         $"UPDATE autor " +
+                         $"SET nome =  '{textAutor.Text}' " +
+                         $"WHERE id_autor = {idAutor};" +
+                         $"UPDATE editora " +
+                         $"SET nome = '{textEditora.Text}'" +
+                         $"WHERE id_editora = {idEditora};" +
+                         $"UPDATE genero " +
+                         $"SET descricao = '{textGenero.Text}' " +
+                         $"WHERE id_genero = {idGenero};";
 
             Console.WriteLine(sql);
 
@@ -183,13 +192,42 @@ namespace AjudaSebo
 
             SqlConnection sqlConnection = new SqlConnection(url);
 
-            string sql = $"update livros set quantidade = quantidade - 1 where isbn = {isbn}";
+            string sql = $"update livros set quantidade = quantidade - 1 where isbn = '{isbn}'";
 
             SqlCommand command = new SqlCommand(sql, sqlConnection);
 
             sqlConnection.Open();
 
             command.ExecuteNonQuery();
+        }
+
+        private string retornarValor(string id, string coluna)
+        {
+
+            string url = "Data Source=WINDOWSCOMPUTER\\SQLEXPRESS;Initial Catalog=ajudasebo;Integrated Security=True";
+
+            SqlConnection sqlConnection = new SqlConnection(url);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
+            DataSet dataSet = new DataSet();
+
+            String sql = $"SELECT {coluna} from livros " +
+                         $"WHERE id_livro = '{id}'";
+            SqlCommand command = new SqlCommand(sql, sqlConnection);
+
+
+            sqlConnection.Open();
+            command.ExecuteNonQuery();
+            sqlDataAdapter.SelectCommand = command;
+            sqlDataAdapter.Fill(dataSet);
+            List<int> geral = new List<int>();
+
+            foreach (DataRow data in dataSet.Tables[0].Rows)
+            {
+
+                geral.Add(data.Field<int>(coluna));
+            }
+
+            return geral[0] + "";
         }
     }
 }

@@ -63,7 +63,7 @@ Este projeto utiliza a licença MIT License. Para mais informações acesse <a h
 
 **Ataide José de Almeida Lima**
 
-[![Linkedin Badge](https://img.shields.io/badge/-AtaideJosé-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ata%C3%ADde-jos%C3%A9-de-almeida-l%C3%ADma-336891168/](https://https://www.linkedin.com/in/ata%C3%ADde-jos%C3%A9-de-almeida-l%C3%ADma-336891168/) [![Hotmail Badge](https://img.shields.io/badge/ataidedelima@hotmail.com-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:ataidedelima@hotmail.com)](mailto:ataidedelima@hotmail.com)
+[![Linkedin Badge](https://img.shields.io/badge/-AtaideJosé-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https:https://www.linkedin.com/in/ata%C3%ADde-jos%C3%A9-de-almeida-l%C3%ADma-336891168///)](https://www.linkedin.com/in/ata%C3%ADde-jos%C3%A9-de-almeida-l%C3%ADma-336891168/) [![Hotmail Badge](https://img.shields.io/badge/ataidedelima@hotmail.com-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:ataidedelima@hotmail.com)](mailto:ataidedelima@hotmail.com)
 
 **Bruno Jun Amanai Yamada**
 
